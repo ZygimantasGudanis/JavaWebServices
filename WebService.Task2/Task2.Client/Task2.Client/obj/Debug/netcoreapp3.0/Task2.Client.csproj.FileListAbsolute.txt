@@ -1,0 +1,11 @@
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\bin\Debug\netcoreapp3.0\Task2.Client.exe
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\bin\Debug\netcoreapp3.0\Task2.Client.deps.json
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\bin\Debug\netcoreapp3.0\Task2.Client.runtimeconfig.json
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\bin\Debug\netcoreapp3.0\Task2.Client.runtimeconfig.dev.json
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\bin\Debug\netcoreapp3.0\Task2.Client.dll
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\bin\Debug\netcoreapp3.0\Task2.Client.pdb
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\obj\Debug\netcoreapp3.0\Task2.Client.csprojAssemblyReference.cache
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\obj\Debug\netcoreapp3.0\Task2.Client.AssemblyInfoInputs.cache
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\obj\Debug\netcoreapp3.0\Task2.Client.AssemblyInfo.cs
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\obj\Debug\netcoreapp3.0\Task2.Client.dll
+D:\Java\WebServiceTasks\Task2.Client\Task2.Client\obj\Debug\netcoreapp3.0\Task2.Client.pdb

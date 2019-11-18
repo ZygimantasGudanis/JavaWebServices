@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:exam="http://example/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <exam:sayHelloWorldFrom>
+         <!--Optional:-->
+         <arg0>?</arg0>
+         <from>God</from>
+      </exam:sayHelloWorldFrom>
+   </soapenv:Body>
+</soapenv:Envelope>
