@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "4e98fe1c-372f-45e6-9c15-566a99f4e989",
+		"name": "Heteos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAuthors",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44310/api/authors",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAuthorBooks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44310/api/books?authorId=f74d6899-9ed2-4137-9876-66b070553f8f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "authorId",
+							"value": "f74d6899-9ed2-4137-9876-66b070553f8f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAuthor",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/createAuthor+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FirstName\":\"Zygis\",\n\t\"LastName\":\"Gudanis\",\n\t\"DateOfBirth\":\"1997-12-11 00:00:00.0000000 +02:00\",\n\t\"Genre\":\"Fantasy\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44310/api/authors?",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBook",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/createAuthor+json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Title\":\"Why C# is better than java\",\n\t\"Description\":\"Java is just that bad, C# isn't the best but still why use java\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44310/api/books?authorId=f74d6899-9ed2-4137-9876-66b070553f8f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "authorId",
+							"value": "f74d6899-9ed2-4137-9876-66b070553f8f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBook",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/createAuthor+json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44310/api/books/49a4b23f-f951-4ed2-6262-08d76767cd6b?authorId=f74d6899-9ed2-4137-9876-66b070553f8f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"books",
+						"49a4b23f-f951-4ed2-6262-08d76767cd6b"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "authorId",
+							"value": "f74d6899-9ed2-4137-9876-66b070553f8f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAuthors",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44310/api/authors/f74d6899-9ed2-4137-9876-66b070553f8f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"authors",
+						"f74d6899-9ed2-4137-9876-66b070553f8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyAuthor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FirstName\":\"Zygimantas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44310/api/authors/4a107e43-2fc8-4bac-9961-c4023e99fb44",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"authors",
+						"4a107e43-2fc8-4bac-9961-c4023e99fb44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyBook",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Title\":\"Neon genesis evangelion\",\n\t\"Description\":\"It is about a little b*tch boiii\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44310/api/books/e57b605f-8b3c-4089-b672-6ce9e6d6c23f?authorId=f74d6899-9ed2-4137-9876-66b070553f8f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"books",
+						"e57b605f-8b3c-4089-b672-6ce9e6d6c23f"
+					],
+					"query": [
+						{
+							"key": "authorId",
+							"value": "f74d6899-9ed2-4137-9876-66b070553f8f"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
